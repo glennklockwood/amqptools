@@ -63,6 +63,11 @@
 #include <assert.h>
 #include <getopt.h>
 
+#ifdef __APPLE__
+#include <signal.h>
+#include <sys/stat.h>
+#endif
+
 #define AMQP_CHANNEL 1
 #define DEFAULT_PREFETCH 10
 
